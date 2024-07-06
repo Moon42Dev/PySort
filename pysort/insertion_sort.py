@@ -1,4 +1,4 @@
-from builtins import len, range
+from builtins import len, print, range
 def insertion_sort(arr):
     for i in range(1, len(arr)):
         key = arr[i]
@@ -7,4 +7,5 @@ def insertion_sort(arr):
             arr[j + 1] = arr[j]
             j -= 1
         arr[j + 1] = key
+        print(arr)
     return arr

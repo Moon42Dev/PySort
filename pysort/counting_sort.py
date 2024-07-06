@@ -1,4 +1,4 @@
-from builtins import len, print, range, max
+from builtins import len, print, range
 def counting_sort(arr, exp):
     n = len(arr)
     output = [0] * n
@@ -17,13 +17,8 @@ def counting_sort(arr, exp):
         output[count[index % 10] - 1] = arr[i]
         count[index % 10] -= 1
         i -= 1
-
+        print(arr)
     for i in range(n):
         arr[i] = output[i]
 
-def radix_sort(arr):
-    max_val = max(arr)
-    exp = 1
-    while max_val // exp > 0:
-        print(arr)
-        counting_sort(arr)
+    return arr

@@ -1,9 +1,10 @@
-from builtins import len, range, max
+from builtins import len, print, range, max
 def shell_sort(arr):
     n = len(arr)
     gap = n // 2
 
     while gap > 0:
+        print(arr)
         for i in range(gap, n):
             temp = arr[i]
             j = i

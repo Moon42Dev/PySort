@@ -1,4 +1,4 @@
-from builtins import len, range
+from builtins import len, print, range
 def merge_sort(arr):
     if len(arr) > 1:
         mid = len(arr) // 2
@@ -18,14 +18,15 @@ def merge_sort(arr):
                 arr[k] = R[j]
                 j += 1
             k += 1
-
+            print(arr)
         while i < len(L):
             arr[k] = L[i]
             i += 1
             k += 1
-
+            print(arr)
         while j < len(R):
             arr[k] = R[j]
             j += 1
             k += 1
+            print(arr)
     return arr

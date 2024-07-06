@@ -1,4 +1,4 @@
-from builtins import int, len, range, max
+from builtins import int, len, print, range, max
 def comb_sort(arr):
     n = len(arr)
     gap = n
@@ -15,5 +15,5 @@ def comb_sort(arr):
             if arr[i] > arr[i + gap]:
                 arr[i], arr[i + gap] = arr[i + gap], arr[i]
                 sorted = False
-
+            print(arr)
     return arr

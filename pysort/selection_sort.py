@@ -1,7 +1,8 @@
-from builtins import len, range
+from builtins import len, print, range
 def selection_sort(arr):
     for i in range(len(arr)):
         min_idx = i
+        print(arr)
         for j in range(i+1, len(arr)):
             if arr[j] < arr[min_idx]:
                 min_idx = j
